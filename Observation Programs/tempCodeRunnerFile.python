@@ -1,12 +1,12 @@
-import math
+Basic_Salary = int(input("Enter Basic Salary :"))
 
-x1 = int(input("Enter coordinates for Point 1 : \n x1 = "))
-y1 = int(input("Enter coordinates for Point 1 : \n y1 = "))
+DA = int(input("Enter DA :"))
+HRA = int(input("Enter HRA : "))
 
-x2 = int(input("Enter coordinates for Point 2 : \n x2 = "))
-y2 = int(input("Enter coordinates for Point 2 : \n y2 = "))
+Gross_Salary = Basic_Salary + DA + HRA
 
+print ("\nGross Salary :" , Gross_Salary)
 
-dist = math.sqrt( ((x2-x1)**2) + ((y2-y1)**2) )
-
-print("Distance between given points is", round(dist,2))
+Tax_Deduction=(Gross_Salary * 10/100)
+print ("\nTax Deducted:" , Tax_Deduction)
+print ("\nGross Salary after Tax",Gross_Salary - Tax_Deduction)

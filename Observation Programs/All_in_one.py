@@ -134,11 +134,25 @@ def distance_between_points():
 
 #--------------------------------------------------------------------------
 
+#Fibonacci _series
+def fibbonacci_series():
+    n=int(input('Enter a value for n :'))
+    a=c=0
+    b=i=1
+    print('fibbonacci series')
+    while i <= n:
+        print(a)
+        c = a + b
+        a ,b= b,c
+        i += 1
+
+
+#--------------------------------------------------------------------------
 
 #All in program 
 print("\n\nH4I , H4VE 4 NICE D4Y\n\n")
 print("Choose Any one Program\n")
-print(" 1.Area of Circle\n 2.Area of Triangle\n 3.Celsius to Fahrenheit\n 4.GCD\n 5.Greater number among the 3 numbers\n 6.Print Hello World\n 7.Multiplication Table\n 8.To check the number is positive or Not\n 9.Sum of two numbers\n 10.Swap two numbers\n 11.To check Leap year\n 12.To Circulate N variables\n 13.To Find Distance between points\n\n")
+print(" 1.Area of Circle\n 2.Area of Triangle\n 3.Celsius to Fahrenheit\n 4.GCD\n 5.Greater number among the 3 numbers\n 6.Print Hello World\n 7.Multiplication Table\n 8.To check the number is positive or Not\n 9.Sum of two numbers\n 10.Swap two numbers\n 11.To check Leap year\n 12.To Circulate N variables\n 13.To Find Distance between points\n 14.To Print Fibonacci Series\n\n")
 prog=int(input("Enter the number , of which program you want to use : "))
 print("\n\n")
 if(prog==1):
@@ -190,6 +204,9 @@ elif(prog==12):
 elif(prog==13):
     print("To Find Distance between points ........................")
     distance_between_points()
+elif(prog==14):
+    print("To Print Fibonacci Series ........................")
+    fibbonacci_series()
 else:
     print("Invalid Option")
 
